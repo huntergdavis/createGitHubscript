@@ -51,10 +51,10 @@ do
     cleandir="${dir// /_}";
     echo "Time to create a repository for $dir, named $cleandir";
     
-    curl -F "login=$USERNAME" -F "token=$API_KEY" https://github.com/api/v2/yaml/repos/create -F name="'$cleandir'" -F description="'$PREFIX - $dir'";
+    curl -F "login=$USERNAME" -F "token=$API_KEY" https://github.com/api/v2/yaml/repos/create -F name="$cleandir" -F description="$PREFIX - $dir";
     
-    echo "Now sleep 5 seconds for politeness";
-    echo sleep 5;
+    echo "Now sleep 15 seconds for politeness";
+    echo sleep 15;
     
     # move down into the directory
     cd $dir;

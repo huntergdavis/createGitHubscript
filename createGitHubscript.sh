@@ -15,3 +15,29 @@ h) echo "Usage: createGitHubscript.sh -k GITHUB_API_KEY -u GITHUB_USERNAME -x DE
 *) echo "Usage: createGitHubscript.sh -k GITHUB_API_KEY -u GITHUB_USERNAME -x DESCRIPTION_PREFIX" ; exit 1 ;;
 esac
 done
+
+
+if [ -z "$API_KEY" ];
+then
+echo "Must have a API KEY set!"
+echo "Usage: createGitHubscript.sh -k GITHUB_API_KEY -u GITHUB_USERNAME -x DESCRIPTION_PREFIX" ;
+exit 0;
+fi
+
+
+if [ -z "$PREFIX" ];
+then
+echo "Must have a API KEY set!"
+echo "Usage: createGitHubscript.sh -k GITHUB_API_KEY -u GITHUB_USERNAME -x DESCRIPTION_PREFIX" ;
+exit 0;
+fi
+
+
+if [ -z "$USERNAME" ];
+then
+echo "Must have a API KEY set!"
+echo "Usage: createGitHubscript.sh -k GITHUB_API_KEY -u GITHUB_USERNAME -x DESCRIPTION_PREFIX" ;
+exit 0;
+fi
+
+

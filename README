@@ -1,1 +1,11 @@
-createGitHubscript first draft
+createGitHubscript is a simple script that uses curl and the github yaml api to create repositories from the directories beneath the current.
+
+There is only one file, the above mentioned script.  You may use it as follows:
+
+Usage: createGitHubscript.sh -k GITHUB_API_KEY -u GITHUB_USERNAME -x DESCRIPTION_PREFIX
+
+Where GITHUB_API_KEY is your GitHub API key (you can find this in your account settings and changes when you change your password)
+GITHUB_USERNAME is your github username
+DESCRIPTION_PREFIX is an option description prefix which defaults to 'APPLICATION' and us used in the 'Description' field of the github repository created.
+
+see LICENSE for the BSD license

@@ -53,8 +53,8 @@ do
     
     curl -F "login=$USERNAME" -F "token=$API_KEY" https://github.com/api/v2/yaml/repos/create -F name="$cleandir" -F description="$PREFIX - $dir";
     
-    echo "Now sleep 15 seconds for politeness";
-    echo sleep 15;
+    echo "Now sleep 5 seconds for politeness";
+    sleep 5;
     
     # move down into the directory
     cd $dir;
@@ -66,7 +66,7 @@ do
     git add ./* ;
     
     # make a first commit
-    git commit -a -m "initial commit for $cleandir";
+    git commit -a -m "initial commit for $dir";
     
     # add the remote origin
     git remote add origin git@github.com:$USERNAME/$cleandir.git ;

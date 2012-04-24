@@ -9,3 +9,5 @@ GITHUB_USERNAME is your github username
 DESCRIPTION_PREFIX is an option description prefix which defaults to 'APPLICATION' and us used in the 'Description' field of the github repository created.
 
 see LICENSE for the BSD license
+
+/h
